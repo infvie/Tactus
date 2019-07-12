@@ -1,0 +1,5 @@
+src/*.ipynb
+docs/*.ipynb
+tests/*.ipynb
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
