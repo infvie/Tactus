@@ -3,3 +3,4 @@ docs/*.ipynb
 tests/*.ipynb
 .ipynb_checkpoints/*
 */.ipynb_checkpoints/*
+*/gurobi.log
