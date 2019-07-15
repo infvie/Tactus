@@ -1,5 +1,4 @@
 src/*.ipynb
-docs/
 tests/*.ipynb
 .ipynb_checkpoints/*
 */.ipynb_checkpoints/*
