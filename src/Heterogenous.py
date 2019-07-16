@@ -50,7 +50,7 @@ def solve(rack_name, slots,chips, quantity, powerdraw, slots_required):
     # print solution
     for chip in chips:
         for i in range(3):
-            print(f'Put $(x[chip,i]) $chip in orientation $i')
+            print(f'Put {x[chip,i].X} {chip} in orientation {i}')
     
 
 
