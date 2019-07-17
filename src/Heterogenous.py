@@ -15,7 +15,6 @@
 from gurobi import *
 
 
-
 def solve(rack_name, slots,chips, quantity, powerdraw, slots_required):
 
     m = Model()
@@ -33,9 +32,16 @@ def solve(rack_name, slots,chips, quantity, powerdraw, slots_required):
     indicies = [(chip,orientation) for chip in chips for orientation in range(3)] # gen pairs 
     x = m.addVars(indicies,vtype=GRB.INTEGER)
 
+    # calculate the power across phases
     m.addConstr(quicksum(powerdraw[chip]*(x[chip,0]+x[chip,1]) for chip in chips),GRB.EQUAL,L[0]);
     m.addConstr(quicksum(powerdraw[chip]*(x[chip,0]+x[chip,2]) for chip in chips),GRB.EQUAL,L[1]);
     m.addConstr(quicksum(powerdraw[chip]*(x[chip,1]+x[chip,2]) for chip in chips),GRB.EQUAL,L[2]);
+    
+    # slot locations
+    m.addConstr(quicksum(x[chip, 0] for chip in chips) <= 7)
+    m.addConstr(quicksum(x[chip, 1] for chip in chips) <= 2)
+    m.addConstr(quicksum(x[chip, 2] for chip in chips) <= 7)
+    
 
     m.addConstrs(quicksum(x[chip,orient] for orient in range(3)) == quantity[chip] for chip in chips);
 
@@ -47,10 +53,9 @@ def solve(rack_name, slots,chips, quantity, powerdraw, slots_required):
 
     m.optimize()
     
-    # print solution
-    for chip in chips:
-        for i in range(3):
-            print(f'Put {x[chip,i].X} {chip} in orientation {i}')
+    return m.getAttr('x',x)
+    
+    
     
 
 
