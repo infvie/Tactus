@@ -1,0 +1,78 @@
+Ice100 Power 45
+Ice101 Power 44
+Ice102 Power 35
+Ice103 Power 47
+Ice104 Power 47
+Ice105 Power 46
+Ice106 Power 68
+Ice107 Power 207
+Ice108 Error
+Ice109 Power 155
+Ice110 Power 163
+Ice111 Power 170
+Ice112 Power 148
+Ice113 Power 164
+Ice114 Power 168
+Ice115 Power 0
+Ice116 Error
+Ice117 Power 152
+Ice118 Power 133
+Ice119 Power 238
+Ice120 Power 232
+Ice121 Power 226
+Ice122 Power 266
+Ice123 Power 386
+Ice124 Power 0
+Ice125 Power 564
+Ice126 Power 0
+Ice127 Power 296
+Ice128 Power 0
+Ice129 Power 370
+Ice130 Power 0
+Ice131 Power 288
+Ice132 Power 0
+Ice133 Power 358
+Ice134 Power 0
+Ice135 Power 284
+Ice136 Power 0
+Ice137 Power 286
+Ice138 Power 0
+ICE139 has a broken IPMI
+Ice140 Power 0
+Ice141 Power 194
+Ice142 Power 484
+Ice143 Power 628
+Ice144 Power 482
+Ice145 Power 566
+Ice146 Power 190
+Ice147 Power 190
+Ice148 Power 188
+Ice149 Power 299
+Ice150 Power 0
+Ice151 Power 0
+Ice152 Power 82
+Ice153 Power 83
+Ice154 Power 92
+Ice155 Power 231
+Ice156 Power 225
+Ice157 Power 224
+Ice158 Power 228
+Ice159 Power 0
+Ice160 Power 217
+Ice161 Power 213
+IceBox01 Power 165
+IceBox02 Power 235
+IceBox03 Power 217
+IceBox04 Power 486
+IceBox05 Power 0
+IceBox06 Error
+YR1R1 Power total: 1103 W
+['165', '235', '217', '486', '0']
+YR1R2 Power: 257 W
+['0', '0', '82', '83', '92', '0']
+YR1R3 Power: 1327 W
+['207', '155', '163', '170', '148', '164', '168', '0', '152']
+YR1R5 Power: 5603 W
+['45', '44', '35', '47', '47', '46', '238', '232', '226', '266', '386', '0', '564', '0', '296', '0', '370', '0', '288', '0', '358', '0', '284', '0', '286', '0', '0', '194', '484', '190', '190', '188', '299']
+YR1R6 Power: 3014 W
+['628', '482', '566', '231', '225', '224', '228', '217', '213']
